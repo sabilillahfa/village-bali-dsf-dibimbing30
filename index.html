@@ -6,21 +6,12 @@
     <title>My Village</title>
 
     <link rel="stylesheet" href="./style.css" />
-    <!-- Font Family -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
-      rel="stylesheet"
-    />
-
     <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="shortcut icon" href="assets/sabillogo.png" type="image/x-icon" />
   </head>
   <body>
     <header>
@@ -29,10 +20,10 @@
           <img src="./assets/village-bali-website-white-logo.png" alt="" />
         </a>
         <nav>
-          <a href="">Home</a>
-          <a href="">Our Room</a>
-          <a href="">Restourant</a>
-          <a href="">Contact</a>
+          <a href="#home">Home</a>
+          <a href="#discover">Discover</a>
+          <a href="#our-room">Our Room</a>
+          <a href="#destination">Destination</a>
         </nav>
       </div>
 
@@ -45,10 +36,10 @@
             srcset=""
         /></span>
         <div id="myLinks">
-          <a href="">Home</a>
-          <a href="">Our Room</a>
-          <a href="">Restourant</a>
-          <a href="">Contact</a>
+          <a href="#home">Home</a>
+          <a href="#discover">Discover</a>
+          <a href="#our-room">Our Room</a>
+          <a href="#destination">Destination</a>
         </div>
         <span href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
@@ -57,7 +48,7 @@
     </header>
 
     <main>
-      <section class="banner">
+      <section class="banner" id="home">
         <div class="banner-content">
           <h2 class="title">BOOK HERE</h2>
           <p class="sub-title">
@@ -72,7 +63,7 @@
         </div>
       </section>
 
-      <section class="location">
+      <section class="location" id="discover">
         <div class="location-wrap">
           <div class="location-item">
             <h1 class="location-title">DISCOVER OUR STORY</h1>
@@ -89,7 +80,7 @@
         </div>
       </section>
 
-      <section class="our-room" id="our-room-section">
+      <section class="our-room" id="our-room">
         <h2 class="title-section">Our Room</h2>
         <div class="card-wrapper">
           <div class="card">
@@ -157,7 +148,7 @@
         </form>
       </section>
 
-      <section class="explore">
+      <section class="explore" id="destination">
         <div class="explore-wrap">
           <div class="explore-item">
             <h3 class="explore-title">DESTINATION</h3>
@@ -193,11 +184,62 @@
           <a href="" class="btn-hero2">DISCOVER OUR ROOM</a>
         </div>
       </section>
-    </main>
 
-    <!-- <footer>
-      <p>&copy; dsf-dibimbing 2024</p>
-    </footer> -->
+      <section class="footer">
+        <div class="footer-wrap">
+          <div class="footer-item">
+            <h2>CONTACT US</h2>
+            <p>
+              Jl. Pemutih, Pecatu, Kec. Kuta Sel., Kabupaten Badung, Bali 80361
+            </p>
+            <p>E-mail: villagebali@outlook.com</p>
+            <p>Phone: +62 81237523203</p>
+          </div>
+          <div class="footer-item">
+            <h2>OUR STORY</h2>
+            <p>
+              Located in Uluwatu, 200 m from Impossible Beach, Village Bali
+              provides accommodation with an outdoor swimming pool, free private
+              parking, a bar and a garden.
+            </p>
+          </div>
+          <div class="footer-item">
+            <div class="footer-gallery">
+              <img src="assets/footer-room1.jpg" alt="" srcset="" />
+              <img src="assets/footer-room2.jpg" alt="" srcset="" />
+              <img src="assets/footer-room3.jpg" alt="" srcset="" />
+              <img src="assets/footer-room4.jpg" alt="" srcset="" />
+              <img src="assets/footer-room5.jpg" alt="" srcset="" />
+              <img src="assets/footer-room6.jpg" alt="" srcset="" />
+              <div class="footer-gallery-item">
+                <!-- <img src="assets/footer-room6.jpg" alt="" srcset="" /> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-copyright">
+          <span>&copy 2024 IDNBALI HOTEL </span>
+          <div class="fc-icon-wrap">
+            <div class="fc-icon-item">
+              <a href="https://www.linkedin.com/in/sabilillahfa/"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </div>
+            <div class="fc-icon-item">
+              <a href="https://www.instagram.com/ojaljaja/"
+                ><i class="fa fa-instagram" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="label">
+        <img src="assets/logo-dibimbing-kemerdekaan.webp" alt="" />
+        <p>Sabilillah Fauzal Addim & DSF-dibimbing30-8/2024</p>
+      </div>
+    </main>
 
     <script>
       function myFunction() {
@@ -207,7 +249,6 @@
           x.style.display = 'none';
         } else {
           x.style.display = 'block';
-          y.style.color = 'orange';
         }
       }
     </script>
